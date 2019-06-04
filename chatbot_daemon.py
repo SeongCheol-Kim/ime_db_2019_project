@@ -1,5 +1,6 @@
 import sys
 import ChatBotModel
+import folium
 
 def proc_rolling(bot, update):
     gang.sendMessage('데구르르..')
@@ -8,8 +9,21 @@ def proc_rolling(bot, update):
     gang.sendMessage('르르..')
 
 def proc_stop(bot, update):
-    gang.sendMessage('치이 봇이 잠듭니다.')
+    gang.sendMessage('종료합니다.')
     gang.stop()
+
+def category_region(bot, update):
+    gang.sendMessage('해당 내역을 검색한 결과입니다. 찾으시는 위치는')
+    category=categories()
+    region=regions()
+    gang.sendMessage('에 있습니다.')
+    
+def categories(bot,update):
+    gang.sendMessage(chat_id = chat_id, text='categoryname')
+
+def regions(bot,update):
+    map=folium.Map(location=['x','y'],zoom_start=13)
+    gang.sendMessage(chat_id=chat_id, text=map)
 
 def firecracker():
     return '팡팡!'
