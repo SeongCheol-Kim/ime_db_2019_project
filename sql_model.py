@@ -1,6 +1,6 @@
 import os
 import json
-from sqlalchemy import Column, String, Integer, Float, Boolean, Date, Table, ForeignKey
+from sqlalchemy import Column, String, Integer, Float, Table, ForeignKey
 from sqlalchemy.orm import relationship, backref
 
 from sqlalchemy import create_engine
@@ -28,7 +28,8 @@ info_association = Table(
     'total_information', Base.metadata,
     Column('RegionID', Integer, ForeignKey('regions.id')),
     Column('CategoryID', Integer, ForeignKey('facilities.id')),
-    Column('ObjectID', Integer, ForeignKey('informations.id'))
+    Column('ObjectID', Integer, ForeignKey('informations.id')),
+    Column('category_id', Integer, ForeignKey('categories.id'))
 )
 
 
@@ -42,6 +43,16 @@ class Region(Base):                                  # 지역 구분
     def __init__(self, code, name):
 
         self.code = code
+        self.name = name
+
+
+class Category(Base):
+    __tablename__ = 'categories'
+
+    id = Column(Integer, primary_key=True)
+    name = Column(String(32))
+
+    def __init__(self, name):
         self.name = name
 
 
@@ -62,16 +73,15 @@ class Information(Base):                            # 종합 정보
 
     id = Column(Integer, primary_key=True)
     region_id = Column(Integer, ForeignKey('regions.id'), nullable=False)
-    facilities_id = Column(Integer, ForeignKey('facilities.id'), nullable=False)
-    category = Column(String(32))
+    facility_id = Column(Integer, ForeignKey('facilities.id'), nullable=False)
+    category_id = Column(Integer, ForeignKey('categories.id'), nullable=False)
     name = Column(String(64))
     tel = Column(String(64))
     fare = Column(String(256))
     latitude = Column(Float)
     longitude = Column(Float)
 
-    def __init__(self, category, name, tel, fare, latitude, longitude):
-        self.category = category
+    def __init__(self, name, tel, fare, latitude, longitude):
         self.name = name
         self.tel = tel
         self.fare = fare
