@@ -1,9 +1,11 @@
 import sys
 import ChatBotModel
+import folium
 
 def start(bot, update):
     gang.sendMessage('안녕하세요? 가천대학교 ibe_2019_프로젝트 한강지구 운동시설 찾기 봇입니다. ')
     gang.sendMessage('사용법을 위해 /help를 입력해주세요.')
+
 
 def help(bot, update):
     gang.sendMessage('지구구분코드 : \n\
@@ -21,6 +23,29 @@ def stop(bot, update):
     gang.sendMessage('감사합니다. 또 찾아주세요!')
     gang.stop()
 
+
+
+gang = ChatBotModel.HangangBot()
+gang.add_handler('start', start)
+gang.add_handler('help', help)
+gang.add_handler('stop', stop)
+
+def proc_stop(bot, update):
+    gang.sendMessage('종료합니다.')
+    gang.stop()
+
+def category_region(bot, update):
+    gang.sendMessage('해당 내역을 검색한 결과입니다. 찾으시는 위치는')
+    category=categories()
+    region=regions()
+    gang.sendMessage('에 있습니다.')
+    
+def categories(bot,update):
+    gang.sendMessage(chat_id = chat_id, text='categoryname')
+
+def regions(bot,update):
+    map=folium.Map(location=['x','y'],zoom_start=13)
+    gang.sendMessage(chat_id=chat_id, text=map)
 
 
 gang = ChatBotModel.HangangBot()
