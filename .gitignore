@@ -1,4 +1,15 @@
 .secrets/
+__pycache__/
+
+# IPython Notebook
+.ipynb_checkpoints
+
+# dotenv
+.env
+
+# virtualenv
+venv/
+ENV/
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
