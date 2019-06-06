@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cc872149e1e446b4b6dc9f73ab4c2d1b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_cc872149e1e446b4b6dc9f73ab4c2d1b" ></div>
+        
+</body>
+<script>    
+    
+            var map_cc872149e1e446b4b6dc9f73ab4c2d1b = L.map(
+                "map_cc872149e1e446b4b6dc9f73ab4c2d1b",
+                {
+                    center: [37.5179, 127.086],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a7e6b088c0e2443098c568979165458c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_cc872149e1e446b4b6dc9f73ab4c2d1b);
+        
+    
+            var marker_0af32160a3104253acf1722c7bdf0f4d = L.marker(
+                [37.5179, 127.086],
+                {}
+            ).addTo(map_cc872149e1e446b4b6dc9f73ab4c2d1b);
+        
+    
+        var popup_8b4f01bc89b24677a1c8eeaf54f051b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9db9f53f1a8c49faa623a74485ed76aa = $(`<div id="html_9db9f53f1a8c49faa623a74485ed76aa" style="width: 100.0%; height: 100.0%;">id:168, 이름:잠실수영장</div>`)[0];
+            popup_8b4f01bc89b24677a1c8eeaf54f051b9.setContent(html_9db9f53f1a8c49faa623a74485ed76aa);
+        
+
+        marker_0af32160a3104253acf1722c7bdf0f4d.bindPopup(popup_8b4f01bc89b24677a1c8eeaf54f051b9)
+        ;
+
+        
+    
+</script>
