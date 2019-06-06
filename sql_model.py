@@ -14,9 +14,9 @@ secrets = json.load(open(os.path.join(SECRET_DIR, "secrets.json")))
 
 
 engine = create_engine('mysql+pymysql://{}:{}@{}:{}/{}'.format(
-    secrets['LOCAL_USER_ID'],
-    secrets['LOCAL_USER_PASSWORD'],
-    secrets['LOCAL_USER_URL'],
+    secrets['RDS_USER_ID'],
+    secrets['RDS_USER_PASSWORD'],
+    secrets['RDS_USER_URL'],
     secrets['RDS_PORT'],
     secrets['DATABASE_NAME']
 ))
