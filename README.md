@@ -3,5 +3,18 @@
 ##### 본 프로젝트는 [가천대학교 산업경영공학과 2019년 1학기 Database 수업](https://github.com/TEAMLAB-Lecture/database-101) 최종 과제입니다.
 
 ### 서울시 한강공원 내의 체육시설에 대한 안내 Chatbot
-- AWS의 RDS(Database는 mysql사용)를 이용하여 EC2로 배포하고 Telegram 사용
 - 공공데이터포털의 [서울특별시 체육시설 현황](https://www.data.go.kr/dataset/3045306/fileData.do) 데이터 사용
+- AWS의 RDS(Database는 mysql사용)를 이용하여 EC2로 배포하여 Telegram에서 사용
+- 원하는 지역과 종목의 코드를 입력하면 해당 지역에 해당 종목의 시설이 있는 경우 지도 링크 제공
+- 지도에서 원하는 시설의 코드 확인 후 입력시 해당 시설에 대한 전화번호 및 요금안내
+- 동영상 추가  
+
+
+### Database 설명
+- ERD  
+![pic]()
+- 데이터 예시  
+![pic2]()  
+
+
+ERD, DB구조, 사용 동영상, 간단한 설명, process

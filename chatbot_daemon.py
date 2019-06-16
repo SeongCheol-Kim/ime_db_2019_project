@@ -62,7 +62,7 @@ def proc_1_2(bot, update):
             folium.Marker([temp_data[i].latitude, temp_data[i].longitude], popup="id:{0}, 이름:{1}".format(temp_data[i].id, temp_data[i].name)).add_to(map_1_2)
 
         map_1_2.save('./templates/map_1_2.html')
-        gang.sendMessage("<a href='http://13.125.121.105:5000/map_1_2'>MAP Link</a>", parse_mode="HTML")
+        gang.sendMessage("<a href='http://13.124.61.113:5000/map1_2'>MAP Link</a>", parse_mode="HTML")
 
 
 def proc_1_3(bot, update):
@@ -90,7 +90,7 @@ def proc_1_4(bot, update):
             folium.Marker([temp_data[i].latitude, temp_data[i].longitude], popup="id:{0}, 이름:{1}".format(temp_data[i].id, temp_data[i].name)).add_to(map_1_4)
 
         map_1_4.save('./templates/map_1_4.html')
-        gang.sendMessage("<a href='http://13.125.121.105:5000/map_1_4'>MAP Link</a>", parse_mode="HTML")
+        gang.sendMessage("<a href='http://13.124.61.113:5000/map1_4'>MAP Link</a>", parse_mode="HTML")
 
 
 def proc_1_5(bot, update):
@@ -118,7 +118,7 @@ def proc_1_6(bot, update):
             folium.Marker([temp_data[i].latitude, temp_data[i].longitude], popup="id:{0}, 이름:{1}".format(temp_data[i].id, temp_data[i].name)).add_to(map_1_6)
 
         map_1_6.save('./templates/map_1_6.html')
-        gang.sendMessage("<a href='http://13.125.121.105:5000/map_1_6'>MAP Link</a>", parse_mode="HTML")
+        gang.sendMessage("<a href='http://13.124.61.113:5000/map1_6'>MAP Link</a>", parse_mode="HTML")
 
 
 def proc_1_7(bot, update):
@@ -160,7 +160,7 @@ def proc_1_9(bot, update):
             folium.Marker([temp_data[i].latitude, temp_data[i].longitude], popup="id:{0}, 이름:{1}".format(temp_data[i].id, temp_data[i].name)).add_to(map_1_9)
 
         map_1_9.save('./templates/map_1_9.html')
-        gang.sendMessage("<a href='http://13.125.121.105:5000/map_1_9'>MAP Link</a>", parse_mode="HTML")
+        gang.sendMessage("<a href='http://13.124.61.113:5000/map1_9'>MAP Link</a>", parse_mode="HTML")
 
 
 def proc_1_10(bot, update):
@@ -174,7 +174,7 @@ def proc_1_10(bot, update):
             folium.Marker([temp_data[i].latitude, temp_data[i].longitude], popup="id:{0}, 이름:{1}".format(temp_data[i].id, temp_data[i].name)).add_to(map_1_10)
 
         map_1_10.save('./templates/map_1_10.html')
-        gang.sendMessage("<a href='http://13.125.121.105:5000/map_1_10'>MAP Link</a>", parse_mode="HTML")
+        gang.sendMessage("<a href='http://13.124.61.113:5000/map1_10'>MAP Link</a>", parse_mode="HTML")
 
 
 def proc_1_11(bot, update):
@@ -188,7 +188,7 @@ def proc_1_11(bot, update):
             folium.Marker([temp_data[i].latitude, temp_data[i].longitude], popup="id:{0}, 이름:{1}".format(temp_data[i].id, temp_data[i].name)).add_to(map_1_11)
 
         map_1_11.save('./templates/map_1_11.html')
-        gang.sendMessage("<a href='http://13.125.121.105:5000/map_1_11'>MAP Link</a>", parse_mode="HTML")
+        gang.sendMessage("<a href='http://13.124.61.113:5000/map1_11'>MAP Link</a>", parse_mode="HTML")
 
 
 def proc_info_42(bot, update):
